@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionando...</title>
+    <meta http-equiv="refresh" content="5; url=https://wa.me/62995189743">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> <!-- Fonte Roboto -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Fonte marcante */
+            background: linear-gradient(135deg, #ffffff 0%, #d0e8ec 100%);
+            color: #333;
+            text-align: center;
+        }
+        .loading {
+            font-size: 36px;
+            position: relative;
+            opacity: 0; 
+            transform: translateY(20px); 
+            animation: fadeIn 1s forwards, slideUp 1s forwards; 
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1; 
+            }
+        }
+        @keyframes slideUp {
+            to {
+                transform: translateY(0); 
+            }
+        }
+        .loading::after {
+            content: '';
+            position: absolute;
+            left: 100%;
+            width: 20px;
+            height: 20px;
+            background: transparent;
+            animation: dots 1s steps(3, end) infinite;
+        }
+        @keyframes dots {
+            0% { content: '...'; }
+            33% { content: '..'; }
+            66% { content: '.'; }
+            100% { content: '...'; }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">Redirecionando</div>
+</body>
+</html>
