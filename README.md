@@ -19,7 +19,7 @@ Você pode acessar o site ao vivo clicando aqui:
 
 Aqui está uma imagem do preview do site:
 
-![Preview do Site](./assets/preview.png)
+![Preview do Site](![Image](https://github.com/user-attachments/assets/75b20df6-8cbb-4590-bf53-663da24e857d))
 
 ## Como Rodar o Projeto Localmente
 
