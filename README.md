@@ -44,7 +44,7 @@ Aqui está uma imagem do preview do site:
     npm run dev
     ```
 
-Agora, você pode acessar o site localmente no endereço `http://localhost:3000`.
+Agora, você pode acessar o site localmente no endereço `http://localhost:port`.
 
 ## Contribuições
 
