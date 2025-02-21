@@ -1,0 +1,974 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* TABLETS */
+
+@media screen and (max-width: 1024px) {
+    /* Esconde a logo e os links do menu */
+    .nav-links,
+    .nav-logo {
+        display: none;
+    }
+
+    /* Container centralizado */
+    .container {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    /* Seção principal */
+    .section-1 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .section-1 .image {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .section-1 .image img {
+        width: 100%;
+    }
+
+    .section-1 .content {
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+    }
+
+/* Botão "Contrate-me" centralizado */
+.btn-container {
+    display: flex;
+    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+    align-items: center;      /* Centraliza o conteúdo verticalmente */
+    height: 100vh;            /* Faz a altura ocupar 100% da tela */
+    width: 100%;              /* Garantir que ocupe toda a largura da tela */
+    margin: 0;                /* Remove margens externas */
+    position: absolute;       /* Posiciona o container em relação ao seu elemento pai */
+    top: 0;
+    left: 0;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+    .btn:hover {
+        background-color: #e68900;
+    }
+
+    /* Cards "Features" e "Pricing" */
+    .features, .pricing {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .features .card, .pricing .card {
+        width: 100%;
+        max-width: 350px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Redes sociais */
+    .socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .socials a {
+        font-size: 35px;
+    }
+
+    /* Rodapé */
+    footer {
+        text-align: center;
+        width: 100%;
+    }
+
+    footer .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    footer .logo {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    footer .logo img {
+        width: 85px;
+        height: auto;
+    }
+
+    footer .socials {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+/* NOOTBOOK*/
+@media screen and (max-width: 1280px) {
+    .nav-links,
+    .nav-logo {
+        display: none;
+    }
+
+    .container {
+        padding: 0 15px; /* Adiciona um pouco de espaçamento para não ficar muito próximo das bordas */
+    }
+
+    .section-1 {
+        display: flex;
+        flex-direction: column-reverse; /* Coloca a imagem em cima e o texto embaixo */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-1 .content {
+        text-align: center;
+    }
+
+    .section-1 .image {
+        width: 80%;
+        text-align: center;
+    }
+
+    .section-1 .image img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .features, .pricing {
+        display: flex;
+        flex-wrap: wrap; /* Permite que os cards quebrem linha quando necessário */
+        justify-content: center; /* Centraliza os cards */
+        gap: 15px; /* Espaçamento menor entre os cards */
+        width: 100%;
+        padding-left: 0; /* Removendo o padding para evitar deslocamento desnecessário */
+    }
+
+    .features .card, .pricing .card {
+        width: 100%; /* A largura vai ser 100% do contêiner pai */
+        max-width: 300px; /* Limita a largura dos cards */
+        text-align: center;
+    }
+
+    .btn {
+        display: inline-block; /* Evita que o botão fique esticado */
+        padding: 10px 20px; /* Ajusta o tamanho do botão */
+        font-size: 16px; /* Tamanho da fonte adequado */
+        text-align: center;
+        border-radius: 5px; /* Bordas arredondadas */
+        background-color: #ff9800; /* Cor de fundo do botão */
+        color: white;
+        text-decoration: none;
+    }
+    
+    .btn-container {
+        text-align: center; /* Centraliza o botão dentro do contêiner */
+        margin-top: 20px; /* Espaçamento para não ficar colado em outros elementos */
+    }
+    
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .socials a {
+        font-size: 35px; /* Aumentei um pouco o tamanho dos ícones sociais */
+    }
+
+    footer .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    footer .logo {
+        display: flex;
+        justify-content: center; /* Centraliza as logos de acordo com a largura dos cards */
+        gap: 15px;
+        margin-bottom: 15px;
+        width: 90%; /* Ajusta a largura para que as logos se alinhem com os cards */
+    }
+
+    footer .logo img {
+        width: 85px; /* Ajuste o tamanho das logos para 80px */
+        height: auto;
+    }
+
+    footer .socials {
+        display: flex;
+        justify-content: center;
+        gap: 30px; /* Mais espaçamento entre os ícones sociais */
+        margin-top: 20px;
+    }
+
+    footer .socials a {
+        font-size: 35px; /* Ícones sociais agora com tamanho maior */
+    }
+
+    .copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+
+
+/* CELULAR */
+@media screen and (max-width: 450px) {
+    .nav-links,
+    .nav-logo {
+        display: none;
+    }
+
+    .container {
+        padding: 0 15px; /* Adiciona um pouco de espaçamento para não ficar muito próximo das bordas */
+    }
+
+    .section-1 {
+        display: flex;
+        flex-direction: column-reverse; /* Coloca a imagem em cima e o texto embaixo */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-1 .content {
+        text-align: center;
+    }
+
+    .section-1 .image {
+        width: 80%;
+        text-align: center;
+    }
+
+    .section-1 .image img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+    footer {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* Ajusta as colunas */
+        gap: 2rem;
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+        text-align: center; /* Centraliza o conteúdo do footer */
+    }
+    
+    footer .main-logo, footer .logo img{
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Garante o alinhamento vertical */
+        gap: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+        margin-left: -25px;
+    }
+    
+    footer .logo img {
+        width: 85px;
+        height: auto;
+    }
+    
+
+
+      .card.hover, .features .card.hover, .features .card:hover, .pricing .card:hover {
+        transform: scale(1.1); 
+        opacity: 1;
+      }
+
+    /* Ajustando os cards da seção "Sobre Mim" */
+    .features, .pricing {
+        display: flex;
+        flex-direction: column; /* Cards em coluna */
+        gap: 20px;
+        align-items: center; /* Alinha os cards ao centro */
+        width: 90%; /* Garante que os cards ocupem 90% da largura */
+        max-width: 600px; /* Limita a largura dos cards */
+        margin: 0 auto; /* Garante que os cards fiquem centralizados */
+        padding-left: 21px; /* Ajuste para mover os cards para a direita */
+    }
+
+    .sub-header {
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        color: #ccc;
+    }
+
+    .features .card, .pricing .card {
+        width: 100%; /* A largura vai ser 100% do contêiner pai */
+        max-width: 300px; /* Limita a largura dos cards */
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 16px; /* Reduz o tamanho do texto */
+        padding: 10px 20px; /* Diminui o espaçamento interno */
+        max-width: 200px; /* Define uma largura máxima */
+        margin: 0 auto; /* Centraliza o botão */
+    }
+
+    footer .socials {
+        display: flex;
+        justify-content: flex-start; /* Alinha os ícones sociais à esquerda */
+        align-items: center; /* Garante que os ícones fiquem alinhados verticalmente */
+        gap: 20px; /* Ajuste no espaçamento entre os ícones */
+        margin-top: 20px;
+        width: auto; /* Garante que a div ocupe a largura necessária */
+    }
+
+}
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInUp 2.5s ease forwards; 
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #18181B;
+    overflow-x: hidden; 
+}
+
+.fade-in-up { 
+    opacity: 0;
+    animation: fadeInUp 2s ease forwards;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.logo-container {
+    position: relative;
+    display: inline-block; 
+    animation: fade 2s infinite alternate; 
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7; 
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.glow-text {
+    font-size: 80px; 
+    color: white; 
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                 0 0 20px rgba(255, 255, 255, 0.6); 
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    animation: changeText 2s infinite alternate; 
+}
+
+
+@keyframes changeText {
+    0% {
+        content: "</>";
+    }
+    50% {
+        content: "<\\>";
+    }
+    100% {
+        content: "</>";
+    }
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo{
+    max-width: 100px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1d4ed8;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #1e40af;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1d4ed8;
+    z-index: -100;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.image img {
+    animation: floatAnimation 3s ease-in-out infinite;
+    transform: translateY(10px); /* Mantém a imagem mais baixa */
+}
+
+
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h4{
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+header .content p{
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+header .image{
+    position: relative;
+}
+
+header .image::before{
+    content: "o";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: #1d4ed8;
+    opacity: 0.2;
+    z-index: -100;
+}
+
+header .image img{
+    max-width: 600px;
+    margin: auto;
+}
+
+section .header{
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.features{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.features .card{
+    background-color: #27272a;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.features .card:hover{
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.features .card span{
+    display: inline-block;
+    background-color: #1e40af;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.features .card h4{
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.features .card p{
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.features .card a{
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.features .card a:hover{
+    color: #1e40af;
+}
+
+.sub-header{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: #ccc;
+}
+
+.pricing{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.pricing .card{
+    padding: 3rem 2rem;
+    background-color: #27272a;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.pricing .card:hover{
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.pricing .card .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .card h4{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pricing .card h3{
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.pricing .card p{
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.pricing .card p i{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.pricing .card button{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.pricing .card button:hover{
+    background-color: #1e40af;
+    border-color: #1e40af;
+}
+
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+footer .column p{
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+footer .column .socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .column .socials a{
+    color: #ccc;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover{
+    color: #fff;
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+footer .column h4{
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .column > a{
+    display: block;
+    color: #ccc;
+    margin-bottom: 1rem;
+    transition: all 0.6s ease;
+}
+
+footer .column > a:hover{
+    color: #1d4ed8;
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media (width < 900px){
+    .nav-links{
+        display: none;
+    }
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header .image{
+        grid-area: 1/1/2/2;
+    }
+    .features{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pricing{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (width < 600px){
+    header .image::before{
+        display: none;
+    }
+
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer{
+        grid-template-columns: 1fr 150px;
+    }
+}
+
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.sub-header {
+    font-size: 17px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+
+footer .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5em; 
+    margin-bottom: 1.5em;
+    margin-left: 2em; 
+}
+
+footer .main-logo {
+    max-width: 100px; 
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer .main-logo:hover {
+    transform: scale(1.1); 
+    opacity: 0.8; 
+}
+
+
+footer p {
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+    margin-left: 2em;
+}
+
+footer .socials {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 1em;
+    margin-left: 2em; 
+}
+
+
+.btn:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out; 
+}
+
+
+.image img {
+    transition: all 0.3s ease-in-out;
+}
+
+.image img:hover {
+    transform: scale(1.05); 
+    opacity: 0.8; 
+}

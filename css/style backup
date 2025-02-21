@@ -1,5 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+@media (max-width: 1280px) {
+    #sobre {
+        padding: 0 20px;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 280px;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        margin: 10px 0;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card span {
+        display: block;
+        font-size: 40px;
+        color: #0077b6;
+        margin-bottom: 10px;
+    }
+
+    .card h4 {
+        margin: 10px 0;
+        font-size: 1.2em;
+        color: #333;
+    }
+
+    .card p {
+        font-size: 1em;
+        color: #666;
+    }
+
+    .pricing {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .pricing .card {
+        width: 48%;
+        max-width: 600px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nav-logo {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
 
 /* TABLETS */
 
@@ -148,126 +223,10 @@
         margin-top: 20px;
     }
 }
-
-
-
-
-/* NOOTBOOK*/
-@media screen and (max-width: 1280px) {
-    .nav-links,
-    .nav-logo {
-        display: none;
-    }
-
-    .container {
-        padding: 0 15px; /* Adiciona um pouco de espaçamento para não ficar muito próximo das bordas */
-    }
-
-    .section-1 {
-        display: flex;
-        flex-direction: column-reverse; /* Coloca a imagem em cima e o texto embaixo */
-        align-items: center;
-        justify-content: center;
-    }
-
-    .section-1 .content {
-        text-align: center;
-    }
-
-    .section-1 .image {
-        width: 80%;
-        text-align: center;
-    }
-
-    .section-1 .image img {
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .features, .pricing {
-        display: flex;
-        flex-wrap: wrap; /* Permite que os cards quebrem linha quando necessário */
-        justify-content: center; /* Centraliza os cards */
-        gap: 15px; /* Espaçamento menor entre os cards */
-        width: 100%;
-        padding-left: 0; /* Removendo o padding para evitar deslocamento desnecessário */
-    }
-
-    .features .card, .pricing .card {
-        width: 100%; /* A largura vai ser 100% do contêiner pai */
-        max-width: 300px; /* Limita a largura dos cards */
-        text-align: center;
-    }
-
-    .btn {
-        display: inline-block; /* Evita que o botão fique esticado */
-        padding: 10px 20px; /* Ajusta o tamanho do botão */
-        font-size: 16px; /* Tamanho da fonte adequado */
-        text-align: center;
-        border-radius: 5px; /* Bordas arredondadas */
-        background-color: #ff9800; /* Cor de fundo do botão */
-        color: white;
-        text-decoration: none;
-    }
-    
-    .btn-container {
-        text-align: center; /* Centraliza o botão dentro do contêiner */
-        margin-top: 20px; /* Espaçamento para não ficar colado em outros elementos */
-    }
     
 
-    .socials {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .socials a {
-        font-size: 35px; /* Aumentei um pouco o tamanho dos ícones sociais */
-    }
-
-    footer .column {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    footer .logo {
-        display: flex;
-        justify-content: center; /* Centraliza as logos de acordo com a largura dos cards */
-        gap: 15px;
-        margin-bottom: 15px;
-        width: 90%; /* Ajusta a largura para que as logos se alinhem com os cards */
-    }
-
-    footer .logo img {
-        width: 85px; /* Ajuste o tamanho das logos para 80px */
-        height: auto;
-    }
-
-    footer .socials {
-        display: flex;
-        justify-content: center;
-        gap: 30px; /* Mais espaçamento entre os ícones sociais */
-        margin-top: 20px;
-    }
-
-    footer .socials a {
-        font-size: 35px; /* Ícones sociais agora com tamanho maior */
-    }
-
-    .copyright {
-        text-align: center;
-        margin-top: 20px;
-    }
-}
 
 
-
-/* CELULAR */
 @media screen and (max-width: 450px) {
     .nav-links,
     .nav-logo {
@@ -275,12 +234,12 @@
     }
 
     .container {
-        padding: 0 15px; /* Adiciona um pouco de espaçamento para não ficar muito próximo das bordas */
+        padding: 0 15px;
     }
 
     .section-1 {
         display: flex;
-        flex-direction: column-reverse; /* Coloca a imagem em cima e o texto embaixo */
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
     }
@@ -299,16 +258,15 @@
         max-width: 400px;
     }
 
-    /* Ajustando os cards da seção "Sobre Mim" */
     .features, .pricing {
         display: flex;
-        flex-direction: column; /* Cards em coluna */
+        flex-direction: column;
         gap: 20px;
-        align-items: center; /* Alinha os cards ao centro */
-        width: 90%; /* Garante que os cards ocupem 90% da largura */
-        max-width: 600px; /* Limita a largura dos cards */
-        margin: 0 auto; /* Garante que os cards fiquem centralizados */
-        padding-left: 21px; /* Ajuste para mover os cards para a direita */
+        align-items: center;
+        width: 90%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding-left: 21px;
     }
 
     .sub-header {
@@ -319,42 +277,50 @@
     }
 
     .features .card, .pricing .card {
-        width: 100%; /* A largura vai ser 100% do contêiner pai */
-        max-width: 300px; /* Limita a largura dos cards */
+        width: 100%;
+        max-width: 300px;
         text-align: center;
     }
 
     .btn {
-        font-size: 16px; /* Reduz o tamanho do texto */
-        padding: 10px 20px; /* Diminui o espaçamento interno */
-        max-width: 200px; /* Define uma largura máxima */
-        margin: 0 auto; /* Centraliza o botão */
+        font-size: 16px;
+        padding: 10px 20px;
+        max-width: 200px;
+        margin: 0 auto;
     }
 
-    footer .socials {
+    footer.container {
         display: flex;
-        justify-content: flex-start; /* Alinha os ícones sociais à esquerda */
-        align-items: center; /* Garante que os ícones fiquem alinhados verticalmente */
-        gap: 20px; /* Ajuste no espaçamento entre os ícones */
-        margin-top: 20px;
-        width: auto; /* Garante que a div ocupe a largura necessária */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
     }
 
+    .main-logo {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 20px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .contact-text {
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #555;
+    }
 }
 
 
 
 
 
-
-* {
-    padding: 0;
-    margin: 0;
-    outline: none;
-    border: none;
-    box-sizing: border-box;
-}
-
+.socials a:hover {
+        transform: scale(1.1); 
+    }
 
 .fade-in {
     opacity: 0;
