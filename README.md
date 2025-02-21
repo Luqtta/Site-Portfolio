@@ -50,6 +50,3 @@ Agora, você pode acessar o site localmente no endereço `http://localhost:port`
 
 Sinta-se à vontade para contribuir com melhorias! Para isso, basta seguir os passos de "Fork", realizar suas modificações e criar um "Pull Request".
 
-## Licença
-
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
