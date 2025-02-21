@@ -11,9 +11,9 @@ Este é um site front-end criado com o intuito de divulgar meu conhecimento em p
 
 ## Link de Funcionamento
 
-Você pode acessar o site ao vivo no seguinte link:
+Você pode acessar o site ao vivo clicando aqui:
 
-[https://lucasportifolioweb.netlify.app](https://lucasportifolioweb.netlify.app)
+[**Clique aqui para ver o site**](https://lucasportifolioweb.netlify.app)
 
 ## Preview
 
